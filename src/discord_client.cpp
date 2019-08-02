@@ -4,6 +4,6 @@
 
 //using SleepyDiscord::DiscordClient::DiscordClient;
 
-void myDiscordListenerClient::onMessage(SleepyDiscord::Message message) {
-		std::cout << message.author.username << "\n";
+void myDiscordListenerClient::onMessage(SleepyDiscord::Message msg) {
+	std::cout << msg.author.username << ": " << msg.content << "\n";
 	}

