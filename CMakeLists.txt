@@ -20,6 +20,12 @@ ENDIF ()
 #Options for cpr build
 option(BUILD_CPR_TESTS "Set to ON to build cpr tests." OFF)
 
+#Options for json build
+set(JSON_BuildTests OFF CACHE INTERNAL "")
+set(JSON_Install OFF CACHE INTERNAL "")
+
+add_subdirectory("deps/nlohmannjson")
+
 add_subdirectory("deps/sleepydiscord/")
 
 add_subdirectory("src/")
