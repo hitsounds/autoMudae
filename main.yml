@@ -1,0 +1,16 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: install openssl
+      run: choco install openssl.light!
+    - name: Run configure for cmake
+      run: .\configure.bat
+    
