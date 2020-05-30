@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: install openssl
-      run: choco install openssl.light!
+      run: choco install openssl
     - name: Run configure for cmake
       run: .\configure.bat
     
